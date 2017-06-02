@@ -359,6 +359,23 @@ Or is eviction just \textcolor{blue}{associated with} worse outcomes because tho
 \end{tikzpicture}
 \end{center}
 
+\end{frame}%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\begin{center}
+\begin{tikzpicture}
+  \node (T) at (0,0) {$T$ = Eviction};
+  \node (Y) at (4, 0) {$Y$ = Child outcomes};
+  \node (Ut) at (0, 2) {$U_T$};
+  \node (X) at (-4, 0) {$X$};
+  \draw[->, >=stealth, thick, line width = 6pt, blue] (T) -- (Y);
+  \draw[->, >=stealth, thick] (X) -- (T);
+  \draw[->, >=stealth, thick] (X) to[bend right]  (Y);
+  \draw[->, >=stealth, thick] (Ut) --  (T);
+  %\draw[->, >=stealth, thick, dashed] (Ut) --  (Y);
+\end{tikzpicture}
+\end{center}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -374,6 +391,23 @@ Or is eviction just \textcolor{blue}{associated with} worse outcomes because tho
   \draw[->, >=stealth, thick] (X) to[bend right]  (Y);
   \draw[->, >=stealth, thick] (Ut) --  (T);
   %\draw[->, >=stealth, thick, dashed] (Ut) --  (Y);
+\end{tikzpicture}
+\end{center}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+
+\begin{center}
+\begin{tikzpicture}
+  \node (T) at (0,0) {$T$ = Eviction};
+  \node (Y) at (4, 0) {$Y$ = Child outcomes};
+  \node (Ut) at (0, 2) {$U_T$};
+  \node (X) at (-4, 0) {$X$};
+  \draw[->, >=stealth, thick] (T) -- (Y);
+  \draw[->, >=stealth, thick] (X) -- (T);
+  \draw[->, >=stealth, thick] (X) to[bend right]  (Y);
+  \draw[->, >=stealth, blue, line width = 6pt] (Ut) --  (T);
 \end{tikzpicture}
 \end{center}
 
